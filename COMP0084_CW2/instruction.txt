@@ -1,0 +1,56 @@
+This file is to provide the instructions to run codes in order to reproduce all works for the course work. 
+
+Note that one should first download "part2" data file from https://liveuclac-my.sharepoint.com/personal/ucaceyi_ucl_ac_uk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fucaceyi%5Fucl%5Fac%5Fuk%2FDocuments%2F2022IRDMdata%5Fpart2%2Ezip&parent=%2Fpersonal%2Fucaceyi%5Fucl%5Fac%5Fuk%2FDocuments&ga=1 and extract to the current path.
+
+Next, one should download 
+
+embedding_passages_train.npy
+embedding_passages_test.npy
+embedding_queries_train.npy
+embedding_queries_test.npy
+
+And extract these files to current path.
+
+After downloading all files, the structure of folder 'cw2' should be shown as below:
+-------------------------------------------
+cw2
+ |--- instructions.txt
+ |--- COMP0084_CW2_report
+ |--- part2
+ |      |--- candidate_passages_top1000.tsv
+ |      |--- train_data.tsv
+ |      |--- validation_data.tsv
+ |      |--- test_queries.tsv
+ |--- embedding_passages_train.npy
+ |--- embedding_passages_test.npy
+ |--- embedding_queries_train.npy
+ |--- embedding_queries_test.npy
+ |--- idf_bm25.npy (for task1)
+ |--- Comparison_lr.png (for task2 visualisation)
+ |--- model.pth (for task4 trained model)
+ |--- COMP0084_CW2.ipynb
+ |--- task1.py
+ |--- task2.py
+ |--- task3.py
+ |--- task4.py
+ |--- LR.txt
+ |--- LM.txt
+ |--- NN.txt
+--------------------------------------------
+
+requirement:
+numpy
+torch with cuda	
+xgboost
+tqdm
+matplotlib
+argparse
+transformer
+re
+scipy
+pandas
+
+COMP0084_CW2.ipynb is the notebook containing all codes for all tasks.
+
+The first step is to properly install all packages used in tasks.
+Then run 'task1.py', 'task2.py', 'task3.py', 'task4.py' files respectively to get results.
